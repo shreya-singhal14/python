@@ -1,7 +1,6 @@
 from PIL import Image
-try:
-  img=Image.open(download.png)
-except IOError:
-  pass
-  
+filename = "image.png"
+with Image.open(filename) as image: 
+    width, height = image.size 
+print(width,height)  
 
